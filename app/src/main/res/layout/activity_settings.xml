@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:background="#0a9396">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="303dp"
+        android:layout_height="532dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginBottom="108dp"
+        android:background="#005f73"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnResetMaxScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="404dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="99dp"
+            android:onClick="onReset"
+            android:text="Сбросить рекорд"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="178dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="63dp"
+            android:max="100"
+            android:progress="50"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="3dp"
+            android:background="#005f73"
+            android:onClick="onClickReturn"
+            android:rotation="270"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_arrow_upward_24"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
